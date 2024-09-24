@@ -811,3 +811,38 @@ footer .footer_main .tag .search_bar button{
     color: white;
     cursor: pointer;
 }
+
+@keyframes footer {
+   0%{
+        background: 0% 0%;
+   }    
+   50%{
+        background: 100% 100%;
+   }
+   0%{
+        background: 0% 0%;
+   }
+}
+
+:root.main.menu{
+    margin-top: 50%;
+    background: linear-gradient(#6c14d0 , #c72092 , #1c0080);
+    position: absolute;
+    max-width: 100px;
+    border-radius: 50%;
+    width:  240px;
+}
+
+ section.nav_main-menu{
+    color: #c72092;
+    margin-bottom: auto;
+    
+ }
+
+ .icon.link{
+      margin-left: 80%;
+
+ }
+
+
+
