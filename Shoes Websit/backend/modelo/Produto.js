@@ -10,17 +10,21 @@ Produto.init({
         autoIncrement: true
     },
     nome: {
-        type: DataTypes.STRING
-    },
-    descricao: {
-        type: DataTypes.TEXT
+        type: DataTypes.STRING(45)
     },
     preco: {
         type: DataTypes.DECIMAL
-    }
+    },
+    imagem: {
+        type: DataTypes.STRING(200)
+    },
+    marca: {
+        type: DataTypes.STRING(45)
+    },
+
 }, {
     sequelize,
-    modelName: 'produto',
+    modelName: 'produtos',
     timestamps: false
 });
 
