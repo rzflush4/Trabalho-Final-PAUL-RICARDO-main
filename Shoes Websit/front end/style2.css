@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+body {
+    height: 100vh;
+    background-image: url("https://i.pinimg.com/originals/d9/a7/d8/d9a7d84754d31ba72dfc47cb40988ac6.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 400px;
+    background: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.967);
+    border-radius: 12px;
+    padding: 25px 49px;
+    backdrop-filter: blur(7px);
+    color: #000000;
+}
+
+.wrapper form h1 {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin: 20px 0;
+    position: relative;
+    text-align: center;
+    color: #000000;
+}
+
+.wrapper form .box {
+    width: 100%;
+    height: 50px;
+    margin: 28px 0;
+    position: relative;
+
+}
+
+.wrapper form .box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgb(0, 0, 0);
+    outline: none;
+    border-radius: 50px;
+    color: #000000;
+    padding: 20px 45px 20px 20px;
+}
+
+.wrapper form .box input::placeholder {
+    color: #000000;
+}
+
+.wrapper form .box o {
+    position: absolute;
+    right: 20px;
+    top: 30%;
+    font-size: 18px;
+}
+
+.wrapper form .check {
+    display: flex;
+    justify-content: space-between;
+    margin: 14px;
+}
+
+.wrapper form .check label input {
+    accent-color: #000000;
+    margin-right: 5px;
+}
+
+.wrapper form .check {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-left: 3%;
+}
+
+.wrapper form .botao {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: auto
+}
+
+.wrapper form .check a :hover {
+    text-decoration: underline;
+}
+
+.wrapper form button {
+    width: 100%;
+    height: 50px;
+    background: #000000;
+    border-radius: 50px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 0 0 20px 0;
+}
+
+.wrapper form .register {
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.wrapper form .register p a {
+    color: #000000;
+}
