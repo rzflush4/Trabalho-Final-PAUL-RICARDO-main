@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const cors = require('cors');
 
 // Configuração do Sequelize
 const db = require('./config/database');
@@ -11,10 +12,11 @@ db.authenticate()
 
 // Middlewares
 app.use(express.json());
+app.use(cors())
 
 // Importar rotas
 const produtosRoutes = require('./rotas/RotasProduto');
-const produtosUsuario = require('./rotas/RotasProduto');
+const produtosUsuario = require('./rotas/RotasUsuarios');
 
 // Usar rotas
 app.use('/api', produtosRoutes);
