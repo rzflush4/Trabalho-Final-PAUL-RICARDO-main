@@ -11,6 +11,27 @@ const UsuarioController = {
             res.status(500).send(error.message);
         }
     },
+    
+    login: async (req, res) => {
+        try {
+            const usuario = await Usuario.findOne({
+                where: {
+                    email: req.body.email
+                }
+            });
+
+            if(!usuario){
+                res.status(400).send("Usuário não encontrado")
+            }
+
+            if(COMPARAR){
+                res.json(usuario)
+            }
+            res.json(novoUsuario);
+        } catch (error) {
+            res.status(500).send(error.message);
+        }
+    },
 
     getAllUsuarios: async (req, res) => {
         try {

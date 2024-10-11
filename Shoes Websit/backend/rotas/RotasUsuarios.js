@@ -5,6 +5,9 @@ const UsuarioController = require('../controlador/Controladorusuario');
 // Rota para criar um novo usuario
 router.post('/usuarios', UsuarioController.createUsuario);
 
+// Rota para login
+router.post('/login', UsuarioController.login);
+
 // Rota para obter todos os usuarios
 router.get('/usuarios', UsuarioController.getAllUsuarios);
 
